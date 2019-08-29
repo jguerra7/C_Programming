@@ -160,17 +160,17 @@ Not equal to	                          !=
 ## Logical operators
 
 Used to combine two relational expression and they returns result as true or false.
-
-A	   B	      A && B	      A || B	       !A
-0		 0    		  0              0            1
+```
+A	   B	      A && B	      A || B	         !A
+0		 0    		    0              0            1
 0	   1          0              1            1
 1	   0          0              1            0
 1	   1          1              1            0
-
+```
 ## Bitwise operators
 
 They are used to perform operation on individual bits. They can be applied on char and int.
-
+```
 Operators	        Symbol name	             Meaning
 &	                 Ampersand	             Bitwise AND
 |	                  Pipe	                  Bitwise OR
@@ -178,7 +178,7 @@ Operators	        Symbol name	             Meaning
 ~	                  Tilde	                   Bitwise compliment
 <<                	Double less than	      Left shift operator
 >>	              Double greater than	      Right shift operator
-
+```
 
 
 

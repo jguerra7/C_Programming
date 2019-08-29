@@ -33,30 +33,38 @@ When terminating our program, it is useful to be able to let the operating syste
 ## Compiling
 ### Unix-like
 If you are using a Unix(-like) system, such as GNU/Linux, Mac OS X, or Solaris, it will probably have GCC installed, otherwise on Linux you can install it using yum or apt-get commands depending on your distribution. Open the virtual console or a terminal emulator and enter the following (be certain your current working directory is the one containing your source code):
-
+```
 > gcc hello.c
+```
 By default gcc will generate our executable binary with the name a.out. To run your new generated program type:
-
+```
 > ./a.out
+```
 You should see Hello, World! printed after the last prompt.
 
 To see the exit status of the last program you ran, type on your shell command:
-
+```
 > echo $?
+```
 This shows the value the main function has returned, which is 0 in the above example.
 
 There are a lot of options you can use with the gcc compiler. For example, if you want the output to have a name other than a.out, you can use the -o option. The following shows a few examples:
-
+```
 > -o
+```
 indicates that the next parameter is the name of the resulting program (or library). If this option is not specified, the compiled program will, for historic reasons, end up in a file called "a.out" or "a.exe" (for cygwin users).
+```
 > -Wall
+```
 indicates that gcc should warn about many types of suspicious code that are likely to be incorrect.
 You can use these options to create a program called "helloworld" instead of "a.out" by typing:
-
+```
 > gcc -o helloworld hello.c -Wall
+```
 Now you can run it by typing:
-
+```
 > ./helloworld
+```
 All the options are well documented in the manual[2] for GCC.
 
 ### On IDEs

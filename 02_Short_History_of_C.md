@@ -1,9 +1,22 @@
 
  
-# Origins of C
+# History of C
+C is imperative language and designed to compile in a relatively straightforward manner which provides low-level access to the memory. With the gradual increase in the popularity of the program, the language and its compiler have become available on a wide range of platforms from embedded microcontrollers to supercomputers.
+With the introduction of K&R C language (which is a new edition of C published in 1978 by Brian Kernighan and Denis Ritchie), several features have been included in C language.
+
+### Some of these features are:
+
+* Standard I/O (Input/Output) Library
+* long int - data type
+* unsigned int - data type
+* Compound assignment operators
+
+During the late 1980s, C was started to use for a wide variety of mainframe computers, micro and mini computers which began to get famous. Gradually C got its superset - i.e., C++ which has added features, but its developed from C with all its initial concepts.
+```
 * C is a by-product of UNIX, developed at Bell Laboratories by Ken Thompson, Dennis Ritchie, and others. 
 * Thompson designed a small language named B.
 * B was based on BCPL, a systems programming language developed in the mid-1960s.
+```
 ## Origins of C
 * By 1971, Ritchie began to develop an extended version of B.
 * He called his language NB (“New B”) at first.

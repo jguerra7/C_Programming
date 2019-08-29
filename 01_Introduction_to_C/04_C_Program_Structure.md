@@ -77,66 +77,81 @@ Simple C programs have the form
 	return x + 1;
 	```
 ## The main Function
-The main function is mandatory.
-main is special: it gets called automatically when the program is executed.
-main returns a status code; the value 0 indicates normal program termination.
-If there’s no return statement at the end of the main function, many compilers will produce a warning message.
+* The main function is mandatory.
+* main is special: it gets called automatically when the program is executed.
+* main returns a status code; the value 0 indicates normal program termination.
+* If there’s no return statement at the end of the main function, many compilers will produce a warning message.
 
 
 ## Statements
-A statement is a command to be executed when the program runs.
-pun.c uses only two kinds of statements. One is the return statement; the other is the function call.
-Asking a function to perform its assigned task is known as calling the function.
-pun.c calls printf to display a string:
+* A statement is a command to be executed when the program runs.
+* pun.c uses only two kinds of statements. One is the return statement; the other is the function call.
+* Asking a function to perform its assigned task is known as calling the function.
+* pun.c calls printf to display a string:
+```C
 	printf("To C, or not to C: that is the question.\n");
+```
 ## Statements
-C requires that each statement end with a semicolon.
-There’s one exception: the compound statement.
-Directives are normally one line long, and they don’t end with a semicolon.
+* C requires that each statement end with a semicolon.
+	- There’s one exception: the compound statement.
+* Directives are normally one line long, and they don’t end with a semicolon.
 
 ## Printing Strings
-When the printf function displays a string literal—characters enclosed in double quotation marks—it doesn’t show the quotation marks.
-printf doesn’t automatically advance to the next output line when it finishes printing.
-To make printf advance one line, include \n (the new-line character) in the string to be printed.
+* When the printf function displays a string literal—characters enclosed in double quotation marks—it doesn’t show the quotation marks.
+* printf doesn’t automatically advance to the next output line when it finishes printing.
+* To make printf advance one line, include \n (the new-line character) in the string to be printed.
  
 
 ## Printing Strings
-The statement
+### The statement
+```C
 	printf("To C, or not to C: that is the question.\n");
-	could be replaced by two calls of printf:
-	printf("To C, or not to C: ");
-	printf("that is the question.\n");
-The new-line character can appear more than once in a string literal:
+```
+could be replaced by two calls of printf:
+```C
+printf("To C, or not to C: ");
+printf("that is the question.\n");
+```
+* The new-line character can appear more than once in a string literal:
+```C	
 	printf("Brevity is the soul of wit.\n  --Shakespeare\n");
+```
 ## Comments
-A comment begins with /* and end with */.
+* A comment begins with /* and end with */.
+```C
 	/* This is a comment */
-Comments may appear almost anywhere in a program, either on separate lines or on the same lines as other program text. 
-Comments may extend over more than one line.
-	/* Name: pun.c
+```
+* Comments may appear almost anywhere in a program, either on separate lines or on the same lines as other program text. 
+* Comments may extend over more than one line.
+```C	/* Name: pun.c
 	   Purpose: Prints a bad pun.
-	   Author: K. N. King */	
+	   Author: CyberUSAF90 */
+```
 ## Comments
-Warning: Forgetting to terminate a comment may cause the compiler to ignore part of your program:
+* Warning: Forgetting to terminate a comment may cause the compiler to ignore part of your program:
+```C
 	printf("My ");    /* forgot to close this comment... 
 	printf("cat ");
 	printf("has ");   /* so it ends here */
 	printf("fleas");
-
+```
 
 ## Comments in C99
-In C99, comments can also be written in the following way:
-	// This is a comment
-This style of comment ends automatically at the end of a line.
-Advantages of // comments:
-Safer: there’s no chance that an unterminated comment will accidentally consume part of a program.
-Multiline comments stand out better.
+*In C99, comments can also be written in the following way:
+```C
+// This is a comment
+
+```
+* This style of comment ends automatically at the end of a line.
+* Advantages of // comments:
+	- Safer: there’s no chance that an unterminated comment will accidentally consume part of a program.
+	- Multiline comments stand out better.
 
 
 ## Variables and Assignment
-Most programs need to a way to store data temporarily during program execution.
-These storage locations are called variables.
-Types
+* Most programs need to a way to store data temporarily during program execution.
+* These storage locations are called variables.
+## Types
 Every variable must have a type.
 C has a wide variety of types, including int and float.
 A variable of type int (short for integer) can store a whole number such as 0, 1, 392, or –2553.

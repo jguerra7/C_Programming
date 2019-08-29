@@ -20,81 +20,87 @@ The file name doesn’t matter, but the **.c** extension is often required.
     - Linking. A linker combines the object code produced by the compiler with any additional code needed to yield a complete executable program.
 * The preprocessor is usually integrated with the compiler.
 
-Compiling and Linking Using cc
-To compile and link the pun.c program under UNIX, enter the following command in a terminal or command-line window:
-	% cc pun.c
-	The % character is the UNIX prompt.
-Linking is automatic when using cc; no separate link command is necessary.
-Compiling and Linking Using cc
-After compiling and linking the program, cc leaves the executable program in a file named a.out by default.
-The -o option lets us choose the name of the file containing the executable program.
-The following command causes the executable version of pun.c to be named pun:
+## Compiling and Linking Using cc
+* To compile and link the pun.c program under UNIX, enter the following command in a terminal or command-line window:
+	- % cc pun.c
+	- The % character is the UNIX prompt.
+* Linking is automatic when using cc; no separate link command is necessary.
+## Compiling and Linking Using cc
+* After compiling and linking the program, cc leaves the executable program in a file named a.out by default.
+* The -o option lets us choose the name of the file containing the executable program.
+* The following command causes the executable version of pun.c to be named pun:
+	```
 	% cc -o pun pun.c
-
-The GCC Compiler
-GCC is one of the most popular C compilers.
-GCC is supplied with Linux but is available for many other platforms as well.
-Using this compiler is similar to using cc:
+	```
+## The GCC Compiler
+* GCC is one of the most popular C compilers.
+* GCC is supplied with Linux but is available for many other platforms as well.
+*Using this compiler is similar to using cc:
+	```
 	% gcc -o pun pun.c
-
-Integrated Development Environments
+	```
+## Integrated Development Environments
 An integrated development environment (IDE) is a software package that makes it possible to edit, compile, link, execute, and debug a program without leaving the environment.
-The General Form of a Simple Program
+## The General Form of a Simple Program
 Simple C programs have the form
+```c
 	directives
   
 	int main(void)
 	{
 	  statements
 	}
-
-The General Form of a Simple Program
-C uses { and } in much the same way that some other languages use words like begin and end.
-Even the simplest C programs rely on three key language features:
-Directives
-Functions
-Statements
-Directives
-Before a C program is compiled, it is first edited by a preprocessor.
-Commands intended for the preprocessor are called directives.
-Example:
+```
+## The General Form of a Simple Program
+* C uses { and } in much the same way that some other languages use words like begin and end.
+* Even the simplest C programs rely on three key language features:
+	- Directives
+	- Functions
+	- Statements
+##  Directives
+* Before a C program is compiled, it is first edited by a preprocessor.
+* Commands intended for the preprocessor are called directives.
+* Example:
+```c
 	#include <stdio.h>
-<stdio.h> is a header containing information about C’s standard I/O library.
-Directives
-Directives always begin with a # character.
-By default, directives are one line long; there’s no semicolon or other special marker at the end.
+```
+* <stdio.h> is a header containing information about C’s standard I/O library.
+##  Directives
+* Directives always begin with a # character.
+* By default, directives are one line long; there’s no semicolon or other special marker at the end.
 
-Functions
-A function is a series of statements that have been grouped together and given a name.
-Library functions are provided as part of the C implementation.
-A function that computes a value uses a return statement to specify what value it “returns”:
+## Functions
+* A function is a series of statements that have been grouped together and given a name.
+* Library functions are provided as part of the C implementation.
+* A function that computes a value uses a return statement to specify what value it “returns”:
+	```
 	return x + 1;
-
-The main Function
+	```
+## The main Function
 The main function is mandatory.
 main is special: it gets called automatically when the program is executed.
 main returns a status code; the value 0 indicates normal program termination.
 If there’s no return statement at the end of the main function, many compilers will produce a warning message.
 
 
-Statements
+## Statements
 A statement is a command to be executed when the program runs.
 pun.c uses only two kinds of statements. One is the return statement; the other is the function call.
 Asking a function to perform its assigned task is known as calling the function.
 pun.c calls printf to display a string:
 	printf("To C, or not to C: that is the question.\n");
-Statements
+## Statements
 C requires that each statement end with a semicolon.
 There’s one exception: the compound statement.
 Directives are normally one line long, and they don’t end with a semicolon.
 
-Printing Strings
+## Printing Strings
 When the printf function displays a string literal—characters enclosed in double quotation marks—it doesn’t show the quotation marks.
 printf doesn’t automatically advance to the next output line when it finishes printing.
 To make printf advance one line, include \n (the new-line character) in the string to be printed.
  
 
-Printing Strings
+## Printing Strings
 The statement
 	printf("To C, or not to C: that is the question.\n");
 	could be replaced by two calls of printf:
@@ -102,7 +108,7 @@ The statement
 	printf("that is the question.\n");
 The new-line character can appear more than once in a string literal:
 	printf("Brevity is the soul of wit.\n  --Shakespeare\n");
-Comments
+## Comments
 A comment begins with /* and end with */.
 	/* This is a comment */
 Comments may appear almost anywhere in a program, either on separate lines or on the same lines as other program text. 
@@ -110,7 +116,7 @@ Comments may extend over more than one line.
 	/* Name: pun.c
 	   Purpose: Prints a bad pun.
 	   Author: K. N. King */	
-Comments
+## Comments
 Warning: Forgetting to terminate a comment may cause the compiler to ignore part of your program:
 	printf("My ");    /* forgot to close this comment... 
 	printf("cat ");
@@ -118,7 +124,7 @@ Warning: Forgetting to terminate a comment may cause the compiler to ignore part
 	printf("fleas");
 
 
-Comments in C99
+## Comments in C99
 In C99, comments can also be written in the following way:
 	// This is a comment
 This style of comment ends automatically at the end of a line.
@@ -127,7 +133,7 @@ Safer: there’s no chance that an unterminated comment will accidentally consum
 Multiline comments stand out better.
 
 
-Variables and Assignment
+## Variables and Assignment
 Most programs need to a way to store data temporarily during program execution.
 These storage locations are called variables.
 Types
@@ -138,7 +144,7 @@ The largest int value is typically 2,147,483,647 but can be as small as 32,767.
 
 
 
-Types
+## Types
 A variable of type float (short for floating-point) can store much larger numbers than an int variable.
 Also, a float variable can store numbers with digits after the decimal point, like 379.125.
 Drawbacks of float variables:
@@ -147,7 +153,7 @@ Approximate nature of float values
 
 
 
-Declarations
+## Declarations
 Variables must be declared before they are used.
 Variables can be declared one at a time:
 	int height;
@@ -156,7 +162,7 @@ Alternatively, several can be declared at the same time:
 	int height, length, width, volume;
 	float profit, loss;
 
-Declarations
+## Declarations
 When main contains declarations, these must precede statements:
 	int main(void)
 	{
@@ -165,22 +171,22 @@ When main contains declarations, these must precede statements:
 	}
 In C99, declarations don’t have to come before statements.
 
-Assignment
+## Assignment
 A variable can be given a value by means of assignment:
 	height = 8;
 	The number 8 is said to be a constant.
 Before a variable can be assigned a value—or used in any other way—it must first be declared.
-Assignment
+## Assignment
 A constant assigned to a float variable usually contains a decimal point:
 	profit = 2150.48;
 It’s best to append the letter f to a floating-point constant if it is assigned to a float variable:
 	profit = 2150.48f;
 	Failing to include the f may cause a warning from the compiler.
-Assignment
+## Assignment
 An int variable is normally assigned a value of type int, and a float variable is normally assigned a value of type float.
 Mixing types (such as assigning an int value to a float variable or assigning a float value to an int variable) is possible but not always safe.
 
-Assignment
+## Assignment
 Once a variable has been assigned a value, it can be used to help compute the value of another variable:
 	height = 8;
 	length = 12;
@@ -189,7 +195,7 @@ Once a variable has been assigned a value, it can be used to help compute the va
 	  /* volume is now 960 */
 The right side of an assignment can be a formula (or expression, in C terminology) involving constants, variables, and operators.
 
-Printing the Value of a Variable
+## Printing the Value of a Variable
 printf can be used to display the current value of a variable.
 To write the message
 	Height: h
@@ -197,7 +203,7 @@ To write the message
 	printf("Height: %d\n", height);
 %d is a placeholder indicating where the value of height is to be filled in.
 
-Printing the Value of a Variable
+## Printing the Value of a Variable
 %d works only for int variables; to print a float variable, use %f instead.
 By default, %f displays a number with six digits after the decimal point.
 To force %f to display p digits after the decimal point, put .p between % and f.
@@ -206,7 +212,7 @@ To print the line
 	use the following call of printf:
 	printf("Profit: $%.2f\n", profit);
 
-Printing the Value of a Variable
+## Printing the Value of a Variable
 There’s no limit to the number of variables that can be printed by a single call of printf:
 	printf("Height: %d  Length: %d\n", height, length);
 

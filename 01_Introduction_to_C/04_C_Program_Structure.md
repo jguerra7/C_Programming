@@ -501,8 +501,8 @@ printf("Celsius equivalent: %.1f\n", celsius);return 0;}
 
 * Although extra spaces can be added between tokens, it’s not possible to add space within a token without changing the meaning of the program or causing an error.
 * Writing 
-	```cfl oat fahrenheit, celsius;  /*** WRONG ***/ 
-	```
+```c fl oat fahrenheit, celsius;  /*** WRONG ***/ 
+```
 	or
 ```c fl
 	oat fahrenheit, celsius;     /*** WRONG ***/ 

@@ -287,14 +287,47 @@ x = ( 3 * 9 * ( 3 + ( 9 * 3 / ( 3 ) ) ) );
 ## What output would you expect from the following program?
 ```c
 #include <stdio.h>
+
 int main (void)
 {
-printf ("Testing...");
-printf ("....1");
-printf ("...2");
-printf ("..3");
-printf ("\n");
-return 0;
+    printf ("Testing...");
+    printf ("....1");
+    printf ("...2");
+    printf ("..3");
+    printf ("\n");
+
+    return 0;
+}
+```
+## Write a program that subtracts the value 15 from 87 and displays the result, together with an appropriate message, at the terminal.
+
+##  Identify the syntactic errors in the following program. Then type in and run the corrected program to ensure you have correctly identified all the mistakes.
+```c 
+#include <stdio.h>
+
+int main (Void)
+(
+        INT  sum;
+        /* COMPUTE RESULT
+        sum = 25 + 37 - 19
+        /* DISPLAY RESULTS //
+        printf ("The answer is %i\n" sum);
+        return 0;
+}
+```
+## What output might you expect from the following program?
+```c
+#include <stdio.h>
+
+int main (void)
+{
+      int answer, result;
+
+      answer = 100;
+      result = answer - 10;
+      printf ("The result is %i\n", result + 5);
+
+      return 0;
 }
 ```
 

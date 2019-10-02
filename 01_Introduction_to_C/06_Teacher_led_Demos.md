@@ -74,3 +74,78 @@ When a value is read from a memory location, the value in that location is prese
 
 The_______________statement is used to make decisions.
  
+ ## State whether each of the following is true or false. If false, explain why.
+
+Function printf always begins printing at the beginning of a new line.
+
+Comments cause the computer to display the text after // on the screen when the program is executed.
+
+The escape sequence \n when used in a printf format control string causes the cursor to position to the beginning of the next line on the screen.
+
+All variables must be defined before they’re used.
+
+All variables must be given a type when they’re defined.
+
+C considers the variables number and NuMbEr to be identical.
+
+Definitions can appear anywhere in the body of a function.
+
+All arguments following the format control string in a printf function must be preceded by an ampersand (&).
+
+The remainder operator (%) can be used only with integer operands.
+
+The arithmetic operators *, /, %, + and − all have the same level of precedence.
+
+A program that prints three lines of output must contain three printf statements.
+
+## Write a single C statement to accomplish each of the following:
+
+Define the variables c, thisVariable, q76354 and number to be of type int.
+
+Prompt the user to enter an integer. End your prompting message with a colon (:) followed by a space and leave the cursor positioned after the space.
+
+Read an integer from the keyboard and store the value entered in integer variable a.
+
+If number is not equal to 7, print “The variable number is not equal to 7.”
+
+Print the message “This is a C program.” on one line.
+
+Print the message “This is a C program.” on two lines so that the first line ends with C.
+
+Print the message “This is a C program.” with each word on a separate line.
+
+Print the message “This is a C program.” with the words separated by tabs.
+
+## Write a statement (or comment) to accomplish each of the following:
+
+State that a program will calculate the product of three integers.
+
+Define the variables x, y, z and result to be of type int.
+
+Prompt the user to enter three integers.
+
+Read three integers from the keyboard and store them in the variables x, y and z.
+
+Compute the product of the three integers contained in variables x, y and z, and assign the result to the variable result.
+
+Print “The product is” followed by the value of the integer variable result.
+
+## Using the statements you wrote in Exercise 2.4, write a complete program that calculates the product of three integers.
+
+## Identify and correct the errors in each of the following statements:
+```
+a. printf( "The value is %d\n", &number );
+
+b. scanf( "%d%d", &number1, number2 );
+
+
+C. if ( c < 7 ) ; {
+   printf( "C is less than 7\n" ) ;
+}
+
+
+D. if ( c => 7 ) {
+   printf( "C is greater than or equal to 7\n" );
+}
+```
+

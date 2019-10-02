@@ -52,25 +52,25 @@ int main (void)
 9. Insert spaces between the tokens in Exercise 8 to make the statement easier to read.
 10. In the dweight.c program, which spaces are essential?
 
-Fill in the blanks in each of the following.
+## Fill in the blanks in each of the following.
 
-Every C program begins execution at the function           .
+Every C program begins execution at the function ___________.
 
-Every function’s body begins with            and ends with           .
+Every function’s body begins with ____________and ends with__________.
 
-Every statement ends with a(n)           .
+Every statement ends with a(n)___________.
 
-The            standard library function displays information on the screen.
+The______________standard library function displays information on the screen.
 
-The escape sequence \n represents the            character, which causes the cursor to position to the beginning of the next line on the screen.
+The escape sequence \n represents the____________character, which causes the cursor to position to the beginning of the next line on the screen.
 
-The            Standard Library function is used to obtain data from the keyboard.
+The_________Standard Library function is used to obtain data from the keyboard.
 
-The conversion specifier            is used in a scanf format control string to indicate that an integer will be input and in a printf format control string to indicate that an integer will be output.
+The conversion specifier______________is used in a scanf format control string to indicate that an integer will be input and in a printf format control string to indicate that an integer will be output.
 
-Whenever a new value is placed in a memory location, that value overrides the previous value in that location. This process is said to be           .
+Whenever a new value is placed in a memory location, that value overrides the previous value in that location. This process is said to be_____________.
 
-When a value is read from a memory location, the value in that location is preserved; this process is said to be           .
+When a value is read from a memory location, the value in that location is preserved; this process is said to be______________.
 
-The            statement is used to make decisions.
+The_______________statement is used to make decisions.
  

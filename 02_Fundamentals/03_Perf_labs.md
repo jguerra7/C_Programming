@@ -59,8 +59,26 @@ $1  bills: 3
 ```
 Hint: divide the amount by 20 to determine the number of $20 bills needed, and then reduce the amount by the total value of the $20 bills. Repeat for the other bill sizes. Be sure to use integer values throughout, not floating-point numbers. 
 
+s
+Create a BMI calculator application that reads the user’s weight in pounds and height in inches (or, if you prefer, the user’s weight in kilograms and height in meters), then calculates and displays the user’s body mass index. Also, the application should display the following information from the Department of Health and Human Services/National Institutes of Health so the user can evaluate his/her BMI:
+```
+BMI VALUES
+Underweight: less than 18.5
+Normal:      between 18.5 and 24.9
+Overweight:  between 25 and 29.9
+Obese:       30 or greater
+```
+Research several car-pooling websites. Create an application that calculates your daily driving cost, so that you can estimate how much money could be saved by car pooling, which also has other advantages such as reducing carbon emissions and reducing traffic congestion. The application should input the following information and display the user’s cost per day of driving to work:
 
+Total miles driven per day.
 
+Cost per gallon of gasoline.
+
+Average miles per gallon.
+
+Parking fees per day.
+
+Tolls per day.
 
 
 

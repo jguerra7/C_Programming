@@ -130,7 +130,7 @@ Compute the product of the three integers contained in variables x, y and z, and
 
 Print “The product is” followed by the value of the integer variable result.
 
-## Using the statements you wrote in Exercise 2.4, write a complete program that calculates the product of three integers.
+## Using the statements you wrote in the previous exercise, write a complete program that calculates the product of three integers.
 
 ## Identify and correct the errors in each of the following statements:
 ```

@@ -149,3 +149,131 @@ D. if ( c => 7 ) {
 }
 ```
 
+## Identify and correct the errors in each of the following statements. (Note: There may be more than one error per statement.)
+```
+scanf( “d”, value );
+
+printf( “The product of %d and %d is %d”\n, x, y );
+
+firstNumber + secondNumber = sumOfNumbers
+
+if ( number => largest)
+   largest == number;
+
+*/ Program to determine the largest of three integers /*
+
+Scanf( “%d”, anInteger );
+
+printf( “Remainder of %d divided by %d is\n”, x, y, x % y );
+
+if ( x = y );
+   printf( %d is equal to %d\n", x, y );
+
+print( “The sum is %d\n,” x + y );
+
+Printf( "The value you entered is: %d\n, &value );
+
+```
+
+## Fill in the blanks in each of the following:
+
+_________are used to document a program and improve its readability.
+
+The function used to display information on the screen is_____________--.
+
+A C statement that makes a decision is_______________.
+
+Calculations are normally performed by________________-statements.
+
+The______________function inputs values from the keyboard.
+
+
+## Write a single C statement or line that accomplishes each of the following:
+
+Print the message “Enter two numbers.”
+
+Assign the product of variables b and c to variable a.
+
+State that a program performs a sample payroll calculation (i.e., use text that helps to document a program).
+
+Input three integer values from the keyboard and place them in integer variables a, b and c.
+
+
+## State which of the following are true and which are false. If false, explain your answer.
+
+C operators are evaluated from left to right.
+
+The following are all valid variable names: _under_bar_, m928134, t5, j7, her_sales, his_account_total, a, b, c, z, z2.
+
+The statement printf( “a = 5;” ); is a typical example of an assignment statement.
+
+A valid arithmetic expression containing no parentheses is evaluated from left to right.
+
+The following are all invalid variable names: 3g, 87, 67h2, h22, 2h.
+
+## Fill in the blanks in each of the following:
+
+What arithmetic operations are on the same level of precedence as multiplication?____________.
+
+When parentheses are nested, which set of parentheses is evaluated first in an arithmetic expression?___________.
+
+A location in the computer’s memory that may contain different values at various times throughout the execution of a program is called a_______________________.
+
+
+## What, if anything, prints when each of the following statements is performed? If nothing prints, then answer “Nothing.” Assume x = 2 and y = 3.
+```
+printf( "%d", x );
+
+printf( "%d", x + x );
+
+printf( "x=" );
+
+printf( "x=%d", x );
+
+printf( "%d = %d", x + y, y + x );
+
+z = x + y;
+
+scanf( "%d%d", &x, &y );
+
+// printf( "x + y = %d", x + y );
+
+printf( "\n" );
+```
+## Which, if any, of the following C statements contain variables whose values are replaced?
+```
+scanf( "%d%d%d%d%d", &b, &c, &d, &e, &f );
+
+p = i + j + k + 7;
+
+printf( "Values are replaced" );
+
+printf( "a = 5" );
+```
+## Given the equation y = ax3 + 7, which of the following, if any, are correct C statements for this equation?
+```
+y = a * x * x * x + 7;
+
+y = a * x * x * ( x + 7 );
+
+y = ( a * x ) * x * ( x + 7 );
+
+y = ( a * x ) * x * x + 7;
+
+y = a * ( x * x * x ) + 7;
+
+y = a * x * ( x * x + 7 );
+
+```
+## State the order of evaluation of the operators in each of the following C statements and show the value of x after each statement is performed.
+```
+x = 7 + 3 * 6 / 2 - 1;
+
+x = 2 % 2 + 2 * 2 - 2 / 2;
+
+x = ( 3 * 9 * ( 3 + ( 9 * 3 / ( 3 ) ) ) );
+
+```
+
+
+

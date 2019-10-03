@@ -15,7 +15,7 @@ The if statement evaluates the test expression inside the parenthesis ().
 If the test expression is evaluated to true, statements inside the body of if are executed.
 If the test expression is evaluated to false, statements inside the body of if are not executed.
 ```
-
+20_Assets/working-c-if-statement.jpg
 
 ## How if statement works in C programming?
 

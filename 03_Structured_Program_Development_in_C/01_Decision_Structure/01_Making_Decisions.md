@@ -1,6 +1,5 @@
-Chapter 5
-Selection Statements
-Statements
+# Selection Statements
+## Statements
 So far, we’ve used return statements and expression statements.
 Most of C’s remaining statements fall into three categories:
 Selection statements: if and switch
@@ -10,13 +9,13 @@ Other C statements:
 Compound statement
 Null statement
 
-Logical Expressions
+## Logical Expressions
 Several of C’s statements must test the value of an expression to see if it is “true” or “false.”
 For example, an if statement might need to test the expression i < j; a true value would indicate that i is less than j.
 In many programming languages, an expression such as i < j would have a special “Boolean” or “logical” type.
 In C, a comparison such as i < j yields an integer: either 0 (false) or 1 (true).
 
-Relational Operators
+## Relational Operators
 C’s relational operators:
 	< 	less than
 	>	greater than
@@ -25,12 +24,12 @@ C’s relational operators:
 These operators produce 0 (false) or 1 (true) when used in expressions.
 The relational operators can be used to compare integers and floating-point numbers, with operands of mixed types allowed.
 
-Relational Operators
+## Relational Operators
 The precedence of the relational operators is lower than that of the arithmetic operators.
 For example, i + j < k - 1 means (i + j) < (k - 1).
 The relational operators are left associative.
 
-Relational Operators
+## Relational Operators
 The expression
 	i < j < k
 	is legal, but does not test whether j lies between i and k.
@@ -39,7 +38,7 @@ Since the < operator is left associative, this expression is equivalent to
 	The 1 or 0 produced by i < j is then compared to k.
 The correct expression is i < j && j < k.
 
-Equality Operators
+## Equality Operators
 C provides two equality operators:
 	== 	equal to
 	!=	not equal to
@@ -49,7 +48,7 @@ The equality operators have lower precedence than the relational operators, so t
 	is equivalent to
 	(i < j) == (j < k)
 
-Logical Operators
+## Logical Operators
 More complicated logical expressions can be built from simpler ones by using the logical operators:
 	!	logical negation
 	&&	logical and
@@ -57,14 +56,14 @@ More complicated logical expressions can be built from simpler ones by using the
 The ! operator is unary, while && and || are binary.
 The logical operators produce 0 or 1 as their result.
 The logical operators treat any nonzero operand as a true value and any zero operand as a false value.
-Logical Operators
+## Logical Operators
 Behavior of the logical operators:
 !expr has the value 1 if expr has the value 0.
 expr1 && expr2 has the value 1 if the values of expr1 and expr2 are both nonzero.
 expr1 || expr2 has the value 1 if either expr1 or expr2 (or both) has a nonzero value.
 In all other cases, these operators produce the value 0.
 
-Logical Operators
+## Logical Operators
 Both && and || perform “short-circuit” evaluation: they first evaluate the left operand, then the right one.
 If the value of the expression can be deduced from the left operand alone, the right operand isn’t evaluated.
 Example:
@@ -72,20 +71,20 @@ Example:
 	(i != 0) is evaluated first. If i isn’t equal to 0, then (j / i > 0) is evaluated.
 If i is 0, the entire expression must be false, so there’s no need to evaluate (j / i > 0). Without short-circuit evaluation, division by zero would have occurred.
 
-Logical Operators
+## Logical Operators
 Thanks to the short-circuit nature of the && and || operators, side effects in logical expressions may not always occur.
 Example:
 	i > 0 && ++j > 0
 	If i > 0 is false, then ++j > 0 is not evaluated, so j isn’t incremented.
 The problem can be fixed by changing the condition to ++j > 0 && i > 0 or, even better, by incrementing j separately.
 
-Logical Operators
+## Logical Operators
 The ! operator has the same precedence as the unary plus and minus operators.
 The precedence of && and || is lower than that of the relational and equality operators.
 For example, i < j && k == m means (i < j) && (k == m).
 The ! operator is right associative; && and || are left associative.
 
-The if Statement
+## The if Statement
 The if statement allows a program to choose between two alternatives by testing an expression.
 In its simplest form, the if statement has the form
 	if ( expression ) statement
@@ -94,7 +93,7 @@ Example:
 	if (line_num == MAX_LINES)
 	  line_num = 0;
 
-The if Statement
+## The if Statement
 Confusing == (equality) with = (assignment) is perhaps the most common C programming error.
 The statement
 	if (i == 0) …
@@ -102,14 +101,14 @@ The statement
 The statement
 	if (i = 0) …
 	assigns 0 to i, then tests whether the result is nonzero.
-The if Statement
+## The if Statement
 Often the expression in an if statement will test whether a variable falls within a range of values.
 To test whether 0 £ i < n:
 	if (0 <= i && i < n) …
 To test the opposite condition (i is outside the range):
 	if (i < 0 || i >= n) …
 
-Compound Statements
+## Compound Statements
 In the if statement template, notice that statement is singular, not plural:
 	if ( expression ) statement
 To make an if statement control two or more statements, use a compound statement.
@@ -117,7 +116,7 @@ A compound statement has the form
 	{ statements }
 Putting braces around a group of statements forces the compiler to treat it as a single statement.
 
-Compound Statements
+## Compound Statements
 Example:
 	{ line_num = 0; page_num++; }
 A compound statement is usually put on multiple lines, with one statement per line:
@@ -126,14 +125,14 @@ A compound statement is usually put on multiple lines, with one statement per li
 	  page_num++;
 	}
 Each inner statement still ends with a semicolon, but the compound statement itself does not.
-Compound Statements
+## Compound Statements
 Example of a compound statement used inside an if statement:
 	if (line_num == MAX_LINES) {
 	  line_num = 0;
 	  page_num++;
 	}
 Compound statements are also common in loops and other places where the syntax of C requires a single statement.
-The else Clause
+## The else Clause
 An if statement may have an else clause:
 	if ( expression ) statement else statement
 The statement that follows the word else is executed if the expression has the value 0.

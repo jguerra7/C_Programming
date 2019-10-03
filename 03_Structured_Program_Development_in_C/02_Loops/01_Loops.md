@@ -108,7 +108,7 @@ The user specifies the number of entries in the table:
 	         5        25
 ```
 ## square.c
- ```c
+```c
 /* Prints a table of squares using a while statement */
  
 #include <stdio.h>

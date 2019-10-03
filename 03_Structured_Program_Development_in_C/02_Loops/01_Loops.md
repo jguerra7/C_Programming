@@ -141,7 +141,7 @@ The program will need a loop that uses scanf to read a number and then adds the 
 
 
 sum.c
- ```c
+```c
 /* Sums a series of numbers */
  
 #include <stdio.h>

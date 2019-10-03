@@ -17,42 +17,50 @@ In C, a comparison such as i < j yields an integer: either 0 (false) or 1 (true)
 
 ## Relational Operators
 C’s relational operators:
+```
 	< 	less than
 	>	greater than
 	<=	less than or equal to
 	>=	greater than or equal to
+```
 These operators produce 0 (false) or 1 (true) when used in expressions.
 The relational operators can be used to compare integers and floating-point numbers, with operands of mixed types allowed.
 
 ## Relational Operators
 The precedence of the relational operators is lower than that of the arithmetic operators.
-For example, i + j < k - 1 means (i + j) < (k - 1).
+For example,``` i + j < k - 1``` means```(i + j) < (k - 1).```
 The relational operators are left associative.
 
 ## Relational Operators
 The expression
+```
 	i < j < k
+```
 	is legal, but does not test whether j lies between i and k.
 Since the < operator is left associative, this expression is equivalent to
-	(i < j) < k
-	The 1 or 0 produced by i < j is then compared to k.
-The correct expression is i < j && j < k.
+```	(i < j) < k```
+	The 1 or 0 produced by ```i < j ```is then compared to k.
+The correct expression is ```i < j && j < k.```
 
 ## Equality Operators
 C provides two equality operators:
+```
 	== 	equal to
 	!=	not equal to
+```
 The equality operators are left associative and produce either 0 (false) or 1 (true) as their result.
 The equality operators have lower precedence than the relational operators, so the expression
-	i < j == j < k
+```	i < j == j < k```
 	is equivalent to
-	(i < j) == (j < k)
+	```(i < j) == (j < k)```
 
 ## Logical Operators
 More complicated logical expressions can be built from simpler ones by using the logical operators:
+```
 	!	logical negation
 	&&	logical and
 	||	logical or
+```
 The ! operator is unary, while && and || are binary.
 The logical operators produce 0 or 1 as their result.
 The logical operators treat any nonzero operand as a true value and any zero operand as a false value.

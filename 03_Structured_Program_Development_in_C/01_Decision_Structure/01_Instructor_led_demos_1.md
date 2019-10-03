@@ -1,5 +1,5 @@
 # if...else Statement
-In this tutorial, you will learn about if statement (including if...else and nested if..else) in C programming with the help of examples.
+In this section, you will learn about if statement (including if...else and nested if..else) in C programming with the help of examples.
 
 ## C if Statement
 The syntax of the if statement in C programming is:

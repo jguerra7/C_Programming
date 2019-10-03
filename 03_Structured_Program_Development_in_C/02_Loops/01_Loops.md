@@ -8,7 +8,7 @@ In C, every loop has a controlling expression.
 Each time the loop body is executed (an iteration of the loop), the controlling expression is evaluated.
 If the expression is true (has a value that’s not zero) the loop continues to execute.
 ```
-#Iteration Statements
+## Iteration Statements
 ```
 C provides three iteration statements:
 The while statement is used for loops whose controlling expression is tested before the loop body is executed. 
@@ -42,7 +42,7 @@ A while statement that computes the smallest power of 2 that is greater than or 
 ```
 A trace of the loop when n has the value 10:
 ```
-i = 1;		i is now 1.
+	i = 1;			i is now 1.
 	Is i < n?		Yes; continue.
 	i = i * 2;		i is now 2.
 	Is i < n?		Yes; continue.

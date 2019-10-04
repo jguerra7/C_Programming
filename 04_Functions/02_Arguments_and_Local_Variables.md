@@ -5,8 +5,7 @@ results to be displayed. These values, called arguments, greatly increase the us
 flexibility of a function. Unlike your printMessage() routine, which displays the same message
 each time it is called, the printf() function displays whatever you tell it to display.
 
-You can define a function that accepts arguments. In Chapter 4, “Program Looping,” you 
-developed an assortment of programs for calculating triangular numbers. Here, you define
+You can define a function that accepts arguments. Here, you define
 a function to generate a triangular number, called appropriately enough, calculateTriangularNumber().
 As an argument to the function, you specify which triangular number to calculate. The function then
 calculates the desired number and displays the results at the terminal. Program below shows the 
@@ -102,7 +101,7 @@ the function. The function then proceeds to calculate the value of the 20th tria
 number and display the answer at the terminal.
 
 For an example of a function that takes more than one argument, rewrite the 
-greatest common divisor program (Program 4.7) in function form. The two arguments 
+greatest common divisor program in function form. The two arguments 
 to the function are the two numbers whose greatest common divisor (gcd) you want to calculate. See Program below.
 
 Program Revising the Program to Find the Greatest Common Divisor

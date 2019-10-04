@@ -1,5 +1,5 @@
 
-# Functions
+# Basics of Functions
 ## Working with Functions
 Behind all well-written programs in the C programming language lies the same fundamental
 element—the function. You’ve used functions in every program that you’ve encountered so far. 

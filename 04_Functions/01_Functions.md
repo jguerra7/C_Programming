@@ -67,7 +67,7 @@ variable names—the choice of names greatly affects the program’s readability
 Recall from discussions of the first program that main() is a specially recognized 
 name in the C system that always indicates where the program is to begin execution. 
 You must always have a main(). You can add a main() function to the preceding code 
-to end up with a complete program, as shown in Program 7.1.
+to end up with a complete program, as shown in Program.
 
 Program:  Writing a Function in C
 

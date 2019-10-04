@@ -54,7 +54,7 @@ average(5.1, 8.9) and average(x/2, y/3) are legal.
 	Average of 3.5 and 10.2: 6.85
 ```
 ## average.c
- ```c
+```c
 /* Computes pairwise averages of three numbers */
  
 #include <stdio.h>
@@ -89,8 +89,8 @@ int main(void)
 * The countdown.c program calls print_count 10 times inside a loop.
 
 
-countdown.c
- 
+##countdown.c
+```c
 /* Prints a countdown */
  
 #include <stdio.h>
@@ -109,6 +109,7 @@ int main(void)
  
   return 0;
 }
+```
 Program: Printing a Pun (Revisited)
 When a function has no parameters, the word void is placed in parentheses after the function’s name:
 	void print_pun(void)

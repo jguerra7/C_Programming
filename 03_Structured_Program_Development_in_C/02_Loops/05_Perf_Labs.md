@@ -23,9 +23,11 @@ if the value entered is other than 1 or 2, keep looping until the user enters a 
 ![image](https://user-images.githubusercontent.com/47218880/66232198-e78cb600-e6ad-11e9-88e5-b1f63b1c5e97.png)
 
 What does the following program print?
+
 ![image](https://user-images.githubusercontent.com/47218880/66232210-f3787800-e6ad-11e9-802e-37420c8f21b3.png)
 
 What does the following program print?
+
 ![image](https://user-images.githubusercontent.com/47218880/66232223-fd01e000-e6ad-11e9-96a9-4c55003a7440.png)
 
 (Square of Asterisks) Write a program that reads in the side of a square and then 

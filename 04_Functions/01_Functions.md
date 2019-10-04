@@ -20,22 +20,25 @@ A function named average that computes the average of two double values:
 	  return (a + b) / 2;
 	}
 ```
--The word double at the beginning is the return type of average.
--The identifiers a and b (the function’s parameters) represent the numbers that will be supplied when average is called.
+* The word double at the beginning is the return type of average.
+* The identifiers a and b (the function’s parameters) represent the numbers that will be supplied when average is called.
 
 ## Program: Computing Averages
 
-Every function has an executable part, called the body, which is enclosed in braces.
-The body of average consists of a single return statement.
-Executing this statement causes the function to “return” to the place from which it was called; the value of (a + b) / 2 will be the value returned by the function.
-Program: Computing Averages
-A function call consists of a function name followed by a list of arguments.
+* Every function has an executable part, called the body, which is enclosed in braces.
+* The body of average consists of a single return statement.
+* Executing this statement causes the function to “return” to the place from which 
+	it was called; the value of (a + b) / 2 will be the value returned by the function.
+	
+## Program: Computing Averages
+* A function call consists of a function name followed by a list of arguments.
 average(x, y) is a call of the average function.
-Arguments are used to supply information to a function.
+* Arguments are used to supply information to a function.
 The call average(x, y) causes the values of x and y to be copied into the parameters a and b.
-An argument doesn’t have to be a variable; any expression of a compatible type will do.
+* An argument doesn’t have to be a variable; any expression of a compatible type will do.
 average(5.1, 8.9) and average(x/2, y/3) are legal.
-Program: Computing Averages
+
+## Program: Computing Averages
 We’ll put the call of average in the place where we need to use the return value.
 A statement that prints the average of x and y:
 	printf("Average: %g\n", average(x, y));

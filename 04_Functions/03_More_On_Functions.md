@@ -181,6 +181,7 @@ rec(5) returns(5 * rec(4),
 ```
 Foxed? Well, that is recursion for you in its simplest garbs. I hope you agree that it’s difficult to visualize how the control flows from one function call to another. Possibly Following figure would make things a bit clearer.
 
+![image](https://user-images.githubusercontent.com/47218880/66239267-0d6e8680-e6bf-11e9-8da1-fdb8bcca4f4a.png)
 
 
 ## Multiple Parameters

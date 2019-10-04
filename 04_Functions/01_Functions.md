@@ -39,21 +39,22 @@ The call average(x, y) causes the values of x and y to be copied into the parame
 average(5.1, 8.9) and average(x/2, y/3) are legal.
 
 ## Program: Computing Averages
-We’ll put the call of average in the place where we need to use the return value.
-A statement that prints the average of x and y:
+* We’ll put the call of average in the place where we need to use the return value.
+* A statement that prints the average of x and y:
 	printf("Average: %g\n", average(x, y));
 	The return value of average isn’t saved; the program prints it and then discards it.
-If we had needed the return value later in the program, we could have captured it in a variable:
+* If we had needed the return value later in the program, we could have captured it in a variable:
 	avg = average(x, y); 
-Program: Computing Averages
-The average.c program reads three numbers and uses the average function to compute their averages, one pair at a time:
+## Program: Computing Averages
+* The average.c program reads three numbers and uses the average function to compute their averages, one pair at a time:
+```
 	Enter three numbers: 3.5 9.6 10.2
 	Average of 3.5 and 9.6: 6.55
 	Average of 9.6 and 10.2: 9.9
 	Average of 3.5 and 10.2: 6.85
-
-average.c
- 
+```
+## average.c
+ ```c
 /* Computes pairwise averages of three numbers */
  
 #include <stdio.h>
@@ -75,16 +76,17 @@ int main(void)
  
   return 0;
 }
-Program: Printing a Countdown
-To indicate that a function has no return value, we specify that its return type is void:
+```
+## Program: Printing a Countdown
+* To indicate that a function has no return value, we specify that its return type is void:
 	void print_count(int n)
 	{
 	  printf("T minus %d and counting\n", n);
 	}
-void is a type with no values.
-A call of print_count must appear in a statement by itself:
+* void is a type with no values.
+* A call of print_count must appear in a statement by itself:
 	print_count(i);
-The countdown.c program calls print_count 10 times inside a loop.
+* The countdown.c program calls print_count 10 times inside a loop.
 
 
 countdown.c

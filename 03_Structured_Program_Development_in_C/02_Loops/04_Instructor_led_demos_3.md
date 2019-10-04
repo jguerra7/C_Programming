@@ -83,7 +83,7 @@ Write a C program.
 
 Test, debug and execute the C program.
 ```
-Drivers are concerned with the mileage obtained by their automobiles. One driver has kept 
+(Gas Mileage)Drivers are concerned with the mileage obtained by their automobiles. One driver has kept 
 track of several tankfuls of gasoline by recording miles driven and gallons used for each tankful.
 Develop a program that will input the miles driven and gallons used for each tankful. 
 The program should calculate and display the miles per gallon obtained for each tankful. 
@@ -109,4 +109,68 @@ Enter the gallons used (-1 to end): -1
 The overall average miles/gallon was 21.601423
 
 ```
+(Credit Limit Calculator) Develop a C program that will determine if a department store customer
+has exceeded the credit limit on a charge account. For each customer, the following facts are available:
+```
+Account number
+
+Balance at the beginning of the month
+
+Total of all items charged by this customer this month
+
+Total of all credits applied to this customer’s account this month
+
+Allowed credit limit
+```
+The program should input each fact, calculate the new balance (= beginning balance + charges – credits), 
+and determine whether the new balance exceeds the customer’s credit limit. For those customers whose 
+credit limit is exceeded, the program should display the customer’s account number, credit limit, 
+new balance and the message “Credit limit exceeded.” Here is a sample input/output dialog:
+
+```
+
+Enter account number (-1 to end): 100
+Enter beginning balance: 5394.78
+Enter total charges: 1000.00
+Enter total credits: 500.00
+Enter credit limit: 5500.00
+Account:      100
+Credit limit: 5500.00
+Balance:      5894.78
+Credit Limit Exceeded.
+
+Enter account number (-1 to end): 200
+Enter beginning balance: 1000.00
+Enter total charges: 123.45
+Enter total credits: 321.00
+Enter credit limit: 1500.00
+
+Enter account number (-1 to end): 300
+Enter beginning balance: 500.00
+Enter total charges: 274.73
+Enter total credits: 100.00
+Enter credit limit: 800.00
+
+Enter account number (-1 to end): -1
+```
+ (Sales Commission Calculator) One large chemical company pays its salespeople on a commission basis. 
+ The salespeople receive $200 per week plus 9% of their gross sales for that week. For example,
+ a salesperson who sells $5000 worth of chemicals in a week receives $200 plus 9% of $5000, or a total of $650. 
+ Develop a program that will input each salesperson’s gross sales for last week and will 
+ calculate and display that salesperson’s earnings. Process one salesperson’s figures at a time. 
+ Here is a sample input/output dialog:
+
+```
+
+Enter sales in dollars (-1 to end): 5000.00
+Salary is: $650.00
+
+Enter sales in dollars (-1 to end): 1234.56
+Salary is: $311.11
+
+Enter sales in dollars (-1 to end): -1
+```
+
+
+
 

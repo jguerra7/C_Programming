@@ -89,7 +89,7 @@ int main(void)
 * The countdown.c program calls print_count 10 times inside a loop.
 
 
-##countdown.c
+## countdown.c
 ```c
 /* Prints a countdown */
  
@@ -110,19 +110,19 @@ int main(void)
   return 0;
 }
 ```
-Program: Printing a Pun (Revisited)
-When a function has no parameters, the word void is placed in parentheses after the function’s name:
+## Program: Printing a Pun (Revisited)
+* When a function has no parameters, the word void is placed in parentheses after the function’s name:
 	void print_pun(void)
 	{
 	  printf("To C, or not to C: that is the question.\n");
 	}
-To call a function with no arguments, we write the function’s name, followed by parentheses:
+* To call a function with no arguments, we write the function’s name, followed by parentheses:
 	print_pun();
 	The parentheses must be present.
-The pun2.c program tests the print_pun function.
+* The pun2.c program tests the print_pun function.
 
-pun2.c
- 
+## pun2.c
+```c 
 /* Prints a bad pun */
  
 #include <stdio.h>
@@ -137,35 +137,36 @@ int main(void)
   print_pun();
   return 0;
 }
-Function Definitions
-General form of a function definition:
+```
+## Function Definitions
+* General form of a function definition:
 	return-type function-name ( parameters )
 	{
 	  declarations
 	  statements
 	}
-Function Definitions
-The return type of a function is the type of value that the function returns.
-Rules governing the return type:
+## Function Definitions
+* The return type of a function is the type of value that the function returns.
+* Rules governing the return type:
 Functions may not return arrays.
 Specifying that the return type is void indicates that the function doesn’t return a value.
-If the return type is omitted in C89, the function is presumed to return a value of type int.
-In C99, omitting the return type is illegal.
-Function Definitions
-As a matter of style, some programmers put the return type above the function name:
+* If the return type is omitted in C89, the function is presumed to return a value of type int.
+* In C99, omitting the return type is illegal.
+## Function Definitions
+* As a matter of style, some programmers put the return type above the function name:
 	double
 	average(double a, double b)
 	{
 	  return (a + b) / 2;
 	}
-Putting the return type on a separate line is especially useful if the return type is lengthy, like unsigned long int.
-Function Definitions
-After the function name comes a list of parameters.
-Each parameter is preceded by a specification of its type; parameters are separated by commas.
-If the function has no parameters, the word void should appear between the parentheses.
-Function Definitions
-The body of a function may include both declarations and statements.
-An alternative version of the average function:
+* Putting the return type on a separate line is especially useful if the return type is lengthy, like unsigned long int.
+## Function Definitions
+* After the function name comes a list of parameters.
+* Each parameter is preceded by a specification of its type; parameters are separated by commas.
+* If the function has no parameters, the word void should appear between the parentheses.
+## Function Definitions
+* The body of a function may include both declarations and statements.
+* An alternative version of the average function:
 	double average(double a, double b)
 	{
 	  double sum;       /* declaration */
@@ -173,59 +174,59 @@ An alternative version of the average function:
 	  sum = a + b;      /* statement */
 	  return sum / 2;   /* statement */
 	}
-Function Definitions
-Variables declared in the body of a function can’t be examined or modified by other functions.
-In C89, variable declarations must come first, before all statements in the body of a function.
-In C99, variable declarations and statements can be mixed, as long as each variable is declared prior to the first statement that uses the variable.
-Function Definitions
-The body of a function whose return type is void (a “void function”) can be empty:
+## Function Definitions
+* Variables declared in the body of a function can’t be examined or modified by other functions.
+* In C89, variable declarations must come first, before all statements in the body of a function.
+* In C99, variable declarations and statements can be mixed, as long as each variable is declared prior to the first statement that uses the variable.
+## Function Definitions
+* The body of a function whose return type is void (a “void function”) can be empty:
 	void print_pun(void)
 	{
 	}
-Leaving the body empty may make sense as a temporary step during program development.
-Function Calls
-A function call consists of a function name followed by a list of arguments, enclosed in parentheses:
+* Leaving the body empty may make sense as a temporary step during program development.
+## Function Calls
+* A function call consists of a function name followed by a list of arguments, enclosed in parentheses:
 	average(x, y)
 	print_count(i)
 	print_pun()
-If the parentheses are missing, the function won’t be called:
+* If the parentheses are missing, the function won’t be called:
 	print_pun;   /*** WRONG ***/
 	This statement is legal but has no effect. 
-Function Calls
-A call of a void function is always followed by a semicolon to turn it into a statement:
+## Function Calls
+* A call of a void function is always followed by a semicolon to turn it into a statement:
 	print_count(i);
 	print_pun();
-A call of a non-void function produces a value that can be stored in a variable, tested, printed, or used in some other way:
+* A call of a non-void function produces a value that can be stored in a variable, tested, printed, or used in some other way:
 	avg = average(x, y);
 	if (average(x, y) > 0)
 	  printf("Average is positive\n");
 	printf("The average is %g\n", average(x, y));
 
-Function Calls
-The value returned by a non-void function can always be discarded if it’s not needed:
+## Function Calls
+* The value returned by a non-void function can always be discarded if it’s not needed:
 	average(x, y);  /* discards return value */
-	This call is an example of an expression statement: a statement that evaluates an expression but then discards the result.
-Function Calls
-Ignoring the return value of average is an odd thing to do, but for some functions it makes sense.
-printf returns the number of characters that it prints.
-After the following call, num_chars will have the value 9:
+	* This call is an example of an expression statement: a statement that evaluates an expression but then discards the result.
+## Function Calls
+* Ignoring the return value of average is an odd thing to do, but for some functions it makes sense.
+* printf returns the number of characters that it prints.
+* After the following call, num_chars will have the value 9:
 	num_chars = printf("Hi, Mom!\n");
-We’ll normally discard printf’s return value:
+* We’ll normally discard printf’s return value:
 	printf("Hi, Mom!\n");
 	  /* discards return value */
-Function Calls
-To make it clear that we’re deliberately discarding the return value of a function, C allows us to put (void) before the call:
+## Function Calls
+* To make it clear that we’re deliberately discarding the return value of a function, C allows us to put (void) before the call:
 	(void) printf("Hi, Mom!\n");
-Using (void) makes it clear to others that you deliberately discarded the return value, not just forgot that there was one.
-Program: Testing Whether a Number Is Prime
-The prime.c program tests whether a number is prime:
+* Using (void) makes it clear to others that you deliberately discarded the return value, not just forgot that there was one.
+## Program: Testing Whether a Number Is Prime
+* The prime.c program tests whether a number is prime:
 	Enter a number: 34
 	Not prime
-The program uses a function named is_prime that returns true if its parameter is a prime number and false if it isn’t.
-is_prime divides its parameter n by each of the numbers between 2 and the square root of n; if the remainder is ever 0, n isn’t prime.
+* The program uses a function named is_prime that returns true if its parameter is a prime number and false if it isn’t.
+* is_prime divides its parameter n by each of the numbers between 2 and the square root of n; if the remainder is ever 0, n isn’t prime.
 
-prime.c
- 
+## prime.c
+```c
 /* Tests whether a number is prime */
  
 #include <stdbool.h>   /* C99 only */
@@ -255,10 +256,12 @@ int main(void)
     printf("Not prime\n");
   return 0;
 } 
-Function Declarations
-C doesn’t require that the definition of a function precede its calls.
-Suppose that we rearrange the average.c program by putting the definition of average after the definition of main.
-Function Declarations
+```
+## Function Declarations
+* C doesn’t require that the definition of a function precede its calls.
+* Suppose that we rearrange the average.c program by putting the definition of average after the definition of main.
+## Function Declarations
+```c
 #include <stdio.h>
 	 
 int main(void)
@@ -278,26 +281,28 @@ double average(double a, double b)
 {
   return (a + b) / 2;
 }
-Function Declarations
-When the compiler encounters the first call of average in main, it has no information about the function.
-Instead of producing an error message, the compiler assumes that average returns an int value.
-We say that the compiler has created an implicit declaration of the function.
-Function Declarations
-The compiler is unable to check that we’re passing average the right number of arguments and that the arguments have the proper type.
-Instead, it performs the default argument promotions and hopes for the best.
-When it encounters the definition of average later in the program, the compiler notices that the function’s return type is actually double, not int, and so we get an error message.
-Function Declarations
-One way to avoid the problem of call-before-definition is to arrange the program so that the definition of each function precedes all its calls.
-Unfortunately, such an arrangement doesn’t always exist.
-Even when it does, it may make the program harder to understand by putting its function definitions in an unnatural order.
-Function Declarations
-Fortunately, C offers a better solution: declare each function before calling it.
-A function declaration provides the compiler with a brief glimpse at a function whose full definition will appear later.
-General form of a function declaration:
+```
+## Function Declarations
+* When the compiler encounters the first call of average in main, it has no information about the function.
+* Instead of producing an error message, the compiler assumes that average returns an int value.
+* We say that the compiler has created an implicit declaration of the function.
+## Function Declarations
+* The compiler is unable to check that we’re passing average the right number of arguments and that the arguments have the proper type.
+* Instead, it performs the default argument promotions and hopes for the best.
+* When it encounters the definition of average later in the program, the compiler notices that the function’s return type is actually double, not int, and so we get an error message.
+## Function Declarations
+* One way to avoid the problem of call-before-definition is to arrange the program so that the definition of each function precedes all its calls.
+* Unfortunately, such an arrangement doesn’t always exist.
+* Even when it does, it may make the program harder to understand by putting its function definitions in an unnatural order.
+## Function Declarations
+* Fortunately, C offers a better solution: declare each function before calling it.
+* A function declaration provides the compiler with a brief glimpse at a function whose full definition will appear later.
+* General form of a function declaration:
 	return-type function-name ( parameters ) ;
-The declaration of a function must be consistent with the function’s definition.
-Here’s the average.c program with a declaration of average added.
-Function Declarations
+* The declaration of a function must be consistent with the function’s definition.
+* Here’s the average.c program with a declaration of average added.
+## Function Declarations
+```c
 #include <stdio.h>
 	 
 double average(double a, double b);   /* DECLARATION */
@@ -319,23 +324,24 @@ double average(double a, double b)    /* DEFINITION */
 {
   return (a + b) / 2;
 }
-Function Declarations
-Function declarations of the kind we’re discussing are known as function prototypes. 
-C also has an older style of function declaration in which the parentheses are left empty.
-A function prototype doesn’t have to specify the names of the function’s parameters, as long as their types are present:
+```
+## Function Declarations
+* Function declarations of the kind we’re discussing are known as function prototypes. 
+* C also has an older style of function declaration in which the parentheses are left empty.
+* A function prototype doesn’t have to specify the names of the function’s parameters, as long as their types are present:
 	double average(double, double);
-It’s usually best not to omit parameter names.
-Function Declarations
-C99 has adopted the rule that either a declaration or a definition of a function must be present prior to any call of the function.
-Calling a function for which the compiler has not yet seen a declaration or definition is an error.
-Arguments
-In C, arguments are passed by value: when a function is called, each argument is evaluated and its value assigned to the corresponding parameter.
-Since the parameter contains a copy of the argument’s value, any changes made to the parameter during the execution of the function don’t affect the argument.
-Arguments
-The fact that arguments are passed by value has both advantages and disadvantages.
-Since a parameter can be modified without affecting the corresponding argument, we can use parameters as variables within the function, reducing the number of genuine variables needed.
-Arguments
-Consider the following function, which raises a number x to a power n:
+* It’s usually best not to omit parameter names.
+## Function Declarations
+* C99 has adopted the rule that either a declaration or a definition of a function must be present prior to any call of the function.
+* Calling a function for which the compiler has not yet seen a declaration or definition is an error.
+## Arguments
+* In C, arguments are passed by value: when a function is called, each argument is evaluated and its value assigned to the corresponding parameter.
+* Since the parameter contains a copy of the argument’s value, any changes made to the parameter during the execution of the function don’t affect the argument.
+## Arguments
+* The fact that arguments are passed by value has both advantages and disadvantages.
+* Since a parameter can be modified without affecting the corresponding argument, we can use parameters as variables within the function, reducing the number of genuine variables needed.
+## Arguments
+* Consider the following function, which raises a number x to a power n:
 	int power(int x, int n)
 	{
 	  int i, result = 1;
@@ -345,7 +351,7 @@ Consider the following function, which raises a number x to a power n:
 	 
 	  return result;
 	}
-Arguments
+## Arguments
 Since n is a copy of the original exponent, the function can safely modify it, removing the need for i:
 	int power(int x, int n)
 	{
@@ -356,34 +362,34 @@ Since n is a copy of the original exponent, the function can safely modify it, r
 	 
 	  return result;
 	}
-Arguments
-C’s requirement that arguments be passed by value makes it difficult to write certain kinds of functions.
-Suppose that we need a function that will decompose a double value into an integer part and a fractional part.
-Since a function can’t return two numbers, we might try passing a pair of variables to the function and having it modify them:
+## Arguments
+* C’s requirement that arguments be passed by value makes it difficult to write certain kinds of functions.
+* Suppose that we need a function that will decompose a double value into an integer part and a fractional part.
+* Since a function can’t return two numbers, we might try passing a pair of variables to the function and having it modify them:
 	void decompose(double x, long int_part,
 	               double frac_part)
 	{
 	  int_part = (long) x;
 	  frac_part = x - int_part;
 	}
-Arguments
-A call of the function:
+## Arguments
+* A call of the function:
 	decompose(3.14159, i, d);
-Unfortunately, i and d won’t be affected by the assignments to int_part and frac_part.
-Chapter 11 shows how to make decompose work correctly.
-Argument Conversions
-C allows function calls in which the types of the arguments don’t match the types of the parameters.
-The rules governing how the arguments are converted depend on whether or not the compiler has seen a prototype for the function (or the function’s full definition) prior to the call.
-Argument Conversions
-The compiler has encountered a prototype prior to the call.
-The value of each argument is implicitly converted to the type of the corresponding parameter as if by assignment.
-Example: If an int argument is passed to a function that was expecting a double, the argument is converted to double automatically.
-Argument Conversions
-The compiler has not encountered a prototype prior to the call.
-The compiler performs the default argument promotions:
-float arguments are converted to double.
-The integral promotions are performed, causing char and short arguments to be converted to int. (In C99, the integer promotions are performed.)
-Argument Conversions
+* Unfortunately, i and d won’t be affected by the assignments to int_part and frac_part.
+
+## Argument Conversions
+* C allows function calls in which the types of the arguments don’t match the types of the parameters.
+* The rules governing how the arguments are converted depend on whether or not the compiler has seen a prototype for the function (or the function’s full definition) prior to the call.
+## Argument Conversions
+* The compiler has encountered a prototype prior to the call.
+* The value of each argument is implicitly converted to the type of the corresponding parameter as if by assignment.
+* Example: If an int argument is passed to a function that was expecting a double, the argument is converted to double automatically.
+## Argument Conversions
+* The compiler has not encountered a prototype prior to the call.
+* The compiler performs the default argument promotions:
+	* float arguments are converted to double.
+	* The integral promotions are performed, causing char and short arguments to be converted to int. (In C99, the integer promotions are performed.)
+## Argument Conversions
 Relying on the default argument promotions is dangerous.
 Example:
 	#include <stdio.h>

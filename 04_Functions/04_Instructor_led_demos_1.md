@@ -76,3 +76,37 @@ return a-b;
 
 }
 ```
+## Output window
+
+ 
+
+Enter the values 43
+
+-------------------------
+
+Result of addition is 7
+
+Result of subtraction is 1
+
+
+## Remarks
+
+• println, add and sub are user-defined functions
+
+• In line numbers 4, 5 and 6, user-defined functions are declared
+
+• In line numbers 23 to 34, they are defined
+
+• In line numbers 15, 16 and 17, they are called
+
+• Line numbers 23, 27 and 31 consist of headers of the functions println, add and sub
+
+• The variables declared in the function headers or function declarations are known as parameters
+
+• In line numbers 6, x and y are the parameter names
+
+• In line numbers 27 and 31, a and b are the parameter names
+
+• The parameters declared inside the function headers are similar to the variables declared inside the body of the function
+
+• main is also a user-defined function
